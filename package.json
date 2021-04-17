@@ -1,0 +1,109 @@
+{
+  "name": "vscode-flomo",
+  "displayName": "flomo",
+  "description": "flomo extension for vscode",
+  "icon": "images/logo.png",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.55.0"
+  },
+  "keywords": [
+    "vscode",
+    "vscode-extension",
+    "flomo"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "flomo.postIdea",
+        "title": "Post idea to flomo",
+        "category": "flomo"
+      },
+      {
+        "command": "flomo.postThought",
+        "title": "Post thought to flomo",
+        "icon": {
+          "dark": "./images/logo.png",
+          "light": "./images/logo.png"
+        },
+        "category": "flomo"
+      },
+      {
+        "command": "flomo.postSelectedThought",
+        "title": "Post selected thought to flomo",
+        "category": "flomo"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "flomo.postThought",
+          "group": "navigation",
+          "when": "editorIsOpen"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "flomo.postThought",
+          "when": "editorIsOpen",
+					"group": "flomo@1"
+        },
+        {
+          "command": "flomo.postSelectedThought",
+          "when": "editorIsOpen && editorHasSelection",
+					"group": "flomo@2"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "flomo.postThought",
+          "when": "editorIsOpen"
+        },
+        {
+          "command": "flomo.postSelectedThought",
+          "when": "editorIsOpen && editorHasSelection"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "flomo",
+      "properties": {
+        "flomo.publicApiKey": {
+          "type": "string",
+          "markdownDescription": "flomo public API Key, more details see [flomo docs](https://help.flomoapp.com/advance/extension)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.55.0",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "eslint": "^7.19.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
