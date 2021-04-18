@@ -3,6 +3,10 @@
   "displayName": "flomo",
   "description": "flomo extension for vscode",
   "icon": "images/logo.png",
+  "author": {
+    "name": "hacker0limbo",
+    "email": "stephen.yin@outlook.com"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.55.0"
@@ -105,5 +109,14 @@
   },
   "dependencies": {
     "axios": "^0.21.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/hacker0limbo/vscode-flomo/issues",
+    "email": "stephen.yin@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hacker0limbo/vscode-flomo.git"
+  },
+  "homepage": "https://github.com/hacker0limbo/vscode-flomo/blob/master/README.md"
 }
