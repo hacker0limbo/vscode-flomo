@@ -1,12 +1,36 @@
 {
   "name": "vscode-flomo",
   "displayName": "flomo",
-  "description": "flomo extension for vscode",
+  "description": "flomo extension for VSCode",
   "icon": "images/logo.png",
+  "publisher": "limboer",
   "author": {
     "name": "hacker0limbo",
+    "url": "https://github.com/hacker0limbo",
     "email": "stephen.yin@outlook.com"
   },
+  "badges": [
+    {
+      "url": "https://img.shields.io/badge/License-MIT-brightgreen.svg",
+      "description": "License: MIT",
+      "href": "https://github.com/hacker0limbo/vscode-flomo/blob/master/LICENSE"
+    },
+    {
+      "url": "https://img.shields.io/badge/PRs-welcome-brightgreen.svg",
+      "description": "PRs Welcome",
+      "href": "https://github.com/hacker0limbo/vscode-flomo/pulls"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/hacker0limbo/vscode-flomo/issues",
+    "email": "stephen.yin@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hacker0limbo/vscode-flomo.git"
+  },
+  "homepage": "https://github.com/hacker0limbo/vscode-flomo/blob/master/README.md",
+  "license": "MIT",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.55.0"
@@ -34,8 +58,8 @@
         "command": "flomo.postThought",
         "title": "Post thought to flomo",
         "icon": {
-          "dark": "./images/logo.png",
-          "light": "./images/logo.png"
+          "dark": "./images/flomo-dark.svg",
+          "light": "./images/flomo-light.svg"
         },
         "category": "flomo"
       },
@@ -57,12 +81,12 @@
         {
           "command": "flomo.postThought",
           "when": "editorIsOpen",
-					"group": "flomo@1"
+          "group": "flomo@1"
         },
         {
           "command": "flomo.postSelectedThought",
           "when": "editorIsOpen && editorHasSelection",
-					"group": "flomo@2"
+          "group": "flomo@2"
         }
       ],
       "commandPalette": [
@@ -109,14 +133,5 @@
   },
   "dependencies": {
     "axios": "^0.21.1"
-  },
-  "bugs": {
-    "url": "https://github.com/hacker0limbo/vscode-flomo/issues",
-    "email": "stephen.yin@outlook.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hacker0limbo/vscode-flomo.git"
-  },
-  "homepage": "https://github.com/hacker0limbo/vscode-flomo/blob/master/README.md"
+  }
 }

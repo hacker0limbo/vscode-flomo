@@ -1,7 +1,6 @@
 import * as vscode from 'vscode';
 import { postIdea, postSelectedThought, postThought } from './commands';
 
-
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand('flomo.postIdea', postIdea),
