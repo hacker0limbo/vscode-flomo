@@ -3,7 +3,7 @@
   "displayName": "flomo",
   "description": "flomo extension for VSCode",
   "icon": "images/logo.png",
-  "publisher": "limboer",
+  "publisher": "Limboer",
   "author": {
     "name": "hacker0limbo",
     "url": "https://github.com/hacker0limbo",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/hacker0limbo/vscode-flomo/blob/master/README.md",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.55.0"
   },

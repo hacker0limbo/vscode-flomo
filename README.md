@@ -1,6 +1,8 @@
 
 # VSCode flomo
 
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/Limboer.vscode-flomo.svg)](https://marketplace.visualstudio.com/items?itemName=Limboer.vscode-flomo) [![Installs](https://vsmarketplacebadge.apphb.com/installs-short/Limboer.vscode-flomo.svg)](https://marketplace.visualstudio.com/items?itemName=Limboer.vscode-flomo) [![Downloads](https://vsmarketplacebadge.apphb.com/downloads/Limboer.vscode-flomo.svg)](https://marketplace.visualstudio.com/items?itemName=Limboer.vscode-flomo) [![Rating Star](https://vsmarketplacebadge.apphb.com/rating-star/Limboer.vscode-flomo.svg)](https://marketplace.visualstudio.com/items?itemName=Limboer.vscode-flomo)
+
 基于 VSCode 的[浮墨](https://flomoapp.com/)插件. 在 VSCode 中一键发布你的想法.
 
 ## Configuration
